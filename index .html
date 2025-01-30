@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Color Memory Game</h1>
+        <p>Remember the order of colors!</p>
+        <p id="score">Score: 0</p>
+        <div id="color-display" class="hidden">
+            <!-- Colors will be displayed here -->
+        </div>
+        <div id="color-order">
+            <!-- User will reorder colors here -->
+        </div>
+        <button id="start-game">Start Game</button>
+        <div id="difficulty">
+            <button onclick="setDifficulty('easy')">Easy</button>
+            <button onclick="setDifficulty('medium')">Medium</button>
+            <button onclick="setDifficulty('hard')">Hard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
